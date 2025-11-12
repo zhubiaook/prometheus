@@ -20,11 +20,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/model/timestamp"
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/promql/parser"
-	"github.com/prometheus/prometheus/util/teststorage"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/model/timestamp"
+	"github.com/zhubiaook/prometheus/promql"
+	"github.com/zhubiaook/prometheus/promql/parser"
+	"github.com/zhubiaook/prometheus/util/teststorage"
 )
 
 func TestRuleEval(t *testing.T) {

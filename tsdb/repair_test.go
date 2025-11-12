@@ -20,10 +20,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	"github.com/prometheus/prometheus/tsdb/fileutil"
-	"github.com/prometheus/prometheus/tsdb/index"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/tsdb/chunks"
+	"github.com/zhubiaook/prometheus/tsdb/fileutil"
+	"github.com/zhubiaook/prometheus/tsdb/index"
 )
 
 func TestRepairBadIndexVersion(t *testing.T) {

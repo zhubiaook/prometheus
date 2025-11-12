@@ -25,7 +25,7 @@ import (
 	"github.com/gophercloud/gophercloud/pagination"
 	"github.com/prometheus/common/model"
 
-	"github.com/prometheus/prometheus/discovery/targetgroup"
+	"github.com/zhubiaook/prometheus/discovery/targetgroup"
 )
 
 const (

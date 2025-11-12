@@ -21,13 +21,13 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/prometheus/prometheus/model/histogram"
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/model/textparse"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	"github.com/prometheus/prometheus/tsdb/encoding"
-	"github.com/prometheus/prometheus/tsdb/tombstones"
+	"github.com/zhubiaook/prometheus/model/histogram"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/model/textparse"
+	"github.com/zhubiaook/prometheus/storage"
+	"github.com/zhubiaook/prometheus/tsdb/chunks"
+	"github.com/zhubiaook/prometheus/tsdb/encoding"
+	"github.com/zhubiaook/prometheus/tsdb/tombstones"
 )
 
 // Type represents the data type of a record.

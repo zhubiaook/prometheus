@@ -22,14 +22,14 @@ import (
 	"github.com/pkg/errors"
 	"golang.org/x/exp/slices"
 
-	"github.com/prometheus/prometheus/model/histogram"
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	tsdb_errors "github.com/prometheus/prometheus/tsdb/errors"
-	"github.com/prometheus/prometheus/tsdb/index"
-	"github.com/prometheus/prometheus/tsdb/tombstones"
+	"github.com/zhubiaook/prometheus/model/histogram"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/storage"
+	"github.com/zhubiaook/prometheus/tsdb/chunkenc"
+	"github.com/zhubiaook/prometheus/tsdb/chunks"
+	tsdb_errors "github.com/zhubiaook/prometheus/tsdb/errors"
+	"github.com/zhubiaook/prometheus/tsdb/index"
+	"github.com/zhubiaook/prometheus/tsdb/tombstones"
 )
 
 // Bitmap used by func isRegexMetaCharacter to check whether a character needs to be escaped.
@@ -278,8 +278,8 @@ func PostingsForMatchers(ix IndexReader, ms ...*labels.Matcher) (index.Postings,
 		} else { // l=""
 			// If the matchers for a labelname selects an empty value, it selects all
 			// the series which don't have the label name set too. See:
-			// https://github.com/prometheus/prometheus/issues/3575 and
-			// https://github.com/prometheus/prometheus/pull/3578#issuecomment-351653555
+			// https://github.com/zhubiaook/prometheus/issues/3575 and
+			// https://github.com/zhubiaook/prometheus/pull/3578#issuecomment-351653555
 			it, err := inversePostingsForMatcher(ix, m)
 			if err != nil {
 				return nil, err

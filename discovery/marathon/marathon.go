@@ -31,10 +31,10 @@ import (
 	"github.com/prometheus/common/config"
 	"github.com/prometheus/common/model"
 
-	"github.com/prometheus/prometheus/discovery"
-	"github.com/prometheus/prometheus/discovery/refresh"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/util/strutil"
+	"github.com/zhubiaook/prometheus/discovery"
+	"github.com/zhubiaook/prometheus/discovery/refresh"
+	"github.com/zhubiaook/prometheus/discovery/targetgroup"
+	"github.com/zhubiaook/prometheus/util/strutil"
 )
 
 const (

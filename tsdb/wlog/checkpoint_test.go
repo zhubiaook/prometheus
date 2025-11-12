@@ -26,10 +26,10 @@ import (
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/model/histogram"
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	"github.com/prometheus/prometheus/tsdb/record"
+	"github.com/zhubiaook/prometheus/model/histogram"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/tsdb/chunks"
+	"github.com/zhubiaook/prometheus/tsdb/record"
 )
 
 func TestLastCheckpoint(t *testing.T) {

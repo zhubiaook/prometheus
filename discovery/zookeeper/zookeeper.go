@@ -27,10 +27,10 @@ import (
 	"github.com/go-zookeeper/zk"
 	"github.com/prometheus/common/model"
 
-	"github.com/prometheus/prometheus/discovery"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/util/strutil"
-	"github.com/prometheus/prometheus/util/treecache"
+	"github.com/zhubiaook/prometheus/discovery"
+	"github.com/zhubiaook/prometheus/discovery/targetgroup"
+	"github.com/zhubiaook/prometheus/util/strutil"
+	"github.com/zhubiaook/prometheus/util/treecache"
 )
 
 var (

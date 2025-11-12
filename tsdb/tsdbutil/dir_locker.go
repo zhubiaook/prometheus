@@ -23,8 +23,8 @@ import (
 	"github.com/pkg/errors"
 	"github.com/prometheus/client_golang/prometheus"
 
-	tsdb_errors "github.com/prometheus/prometheus/tsdb/errors"
-	"github.com/prometheus/prometheus/tsdb/fileutil"
+	tsdb_errors "github.com/zhubiaook/prometheus/tsdb/errors"
+	"github.com/zhubiaook/prometheus/tsdb/fileutil"
 )
 
 const (

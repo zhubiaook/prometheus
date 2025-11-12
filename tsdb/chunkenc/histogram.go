@@ -17,8 +17,8 @@ import (
 	"encoding/binary"
 	"math"
 
-	"github.com/prometheus/prometheus/model/histogram"
-	"github.com/prometheus/prometheus/model/value"
+	"github.com/zhubiaook/prometheus/model/histogram"
+	"github.com/zhubiaook/prometheus/model/value"
 )
 
 // HistogramChunk holds encoded sample data for a sparse, high-resolution

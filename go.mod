@@ -1,4 +1,4 @@
-module github.com/prometheus/prometheus
+module github.com/zhubiaook/prometheus
 
 go 1.18
 
@@ -12,7 +12,6 @@ require (
 	github.com/dennwc/varint v1.0.0
 	github.com/dgryski/go-sip13 v0.0.0-20200911182023-62edffca9245
 	github.com/digitalocean/godo v1.88.0
-	github.com/docker/docker v20.10.21+incompatible
 	github.com/edsrzf/mmap-go v1.1.0
 	github.com/envoyproxy/go-control-plane v0.10.3
 	github.com/envoyproxy/protoc-gen-validate v0.6.13
@@ -51,6 +50,7 @@ require (
 	github.com/shurcooL/httpfs v0.0.0-20190707220628-8d4bc4ba7749
 	github.com/stretchr/testify v1.8.1
 	github.com/vultr/govultr/v2 v2.17.2
+	github.com/zhubiaook/docker v24.0.9-fork+incompatible
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.36.4
 	go.opentelemetry.io/otel v1.11.1
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace v1.11.1

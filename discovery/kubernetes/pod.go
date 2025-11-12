@@ -29,8 +29,8 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/util/workqueue"
 
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/util/strutil"
+	"github.com/zhubiaook/prometheus/discovery/targetgroup"
+	"github.com/zhubiaook/prometheus/util/strutil"
 )
 
 const nodeIndex = "node"

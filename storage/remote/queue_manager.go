@@ -31,15 +31,15 @@ import (
 	"go.opentelemetry.io/otel/attribute"
 	"go.uber.org/atomic"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/model/histogram"
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/model/relabel"
-	"github.com/prometheus/prometheus/prompb"
-	"github.com/prometheus/prometheus/scrape"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	"github.com/prometheus/prometheus/tsdb/record"
-	"github.com/prometheus/prometheus/tsdb/wlog"
+	"github.com/zhubiaook/prometheus/config"
+	"github.com/zhubiaook/prometheus/model/histogram"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/model/relabel"
+	"github.com/zhubiaook/prometheus/prompb"
+	"github.com/zhubiaook/prometheus/scrape"
+	"github.com/zhubiaook/prometheus/tsdb/chunks"
+	"github.com/zhubiaook/prometheus/tsdb/record"
+	"github.com/zhubiaook/prometheus/tsdb/wlog"
 )
 
 const (

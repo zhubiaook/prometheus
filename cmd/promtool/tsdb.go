@@ -30,18 +30,18 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
-	"github.com/prometheus/prometheus/tsdb/index"
+	"github.com/zhubiaook/prometheus/storage"
+	"github.com/zhubiaook/prometheus/tsdb/chunkenc"
+	"github.com/zhubiaook/prometheus/tsdb/index"
 
 	"github.com/alecthomas/units"
 	"github.com/go-kit/log"
 
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/tsdb"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	tsdb_errors "github.com/prometheus/prometheus/tsdb/errors"
-	"github.com/prometheus/prometheus/tsdb/fileutil"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/tsdb"
+	"github.com/zhubiaook/prometheus/tsdb/chunks"
+	tsdb_errors "github.com/zhubiaook/prometheus/tsdb/errors"
+	"github.com/zhubiaook/prometheus/tsdb/fileutil"
 )
 
 const timeDelta = 30000

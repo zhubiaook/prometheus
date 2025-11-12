@@ -33,9 +33,9 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/notifier"
-	"github.com/prometheus/prometheus/rules"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/notifier"
+	"github.com/zhubiaook/prometheus/rules"
 )
 
 const startupTime = 10 * time.Second

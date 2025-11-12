@@ -10,9 +10,9 @@ examples and guides.</p>
 [![CircleCI](https://circleci.com/gh/prometheus/prometheus/tree/main.svg?style=shield)][circleci]
 [![Docker Repository on Quay](https://quay.io/repository/prometheus/prometheus/status)][quay]
 [![Docker Pulls](https://img.shields.io/docker/pulls/prom/prometheus.svg?maxAge=604800)][hub]
-[![Go Report Card](https://goreportcard.com/badge/github.com/prometheus/prometheus)](https://goreportcard.com/report/github.com/prometheus/prometheus)
+[![Go Report Card](https://goreportcard.com/badge/github.com/zhubiaook/prometheus)](https://goreportcard.com/report/github.com/zhubiaook/prometheus)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/486/badge)](https://bestpractices.coreinfrastructure.org/projects/486)
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/prometheus/prometheus)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/zhubiaook/prometheus)
 [![Fuzzing Status](https://oss-fuzz-build-logs.storage.googleapis.com/badges/prometheus.svg)](https://bugs.chromium.org/p/oss-fuzz/issues/list?sort=-opened&can=1&q=proj:prometheus)
 
 </div>
@@ -72,7 +72,7 @@ To build Prometheus from source code, You need:
 Start by cloning the repository:
 
 ```bash
-git clone https://github.com/prometheus/prometheus.git
+git clone https://github.com/zhubiaook/prometheus.git
 cd prometheus
 ```
 
@@ -80,7 +80,7 @@ You can use the `go` tool to build and install the `prometheus`
 and `promtool` binaries into your `GOPATH`:
 
 ```bash
-GO111MODULE=on go install github.com/prometheus/prometheus/cmd/...
+GO111MODULE=on go install github.com/zhubiaook/prometheus/cmd/...
 prometheus --config.file=your_config.yml
 ```
 
@@ -90,7 +90,7 @@ read its web assets from local filesystem directories under `web/ui/static` and
 from the root of the cloned repository. Note also that these directories do not include the
 React UI unless it has been built explicitly using `make assets` or `make build`.
 
-An example of the above configuration file can be found [here.](https://github.com/prometheus/prometheus/blob/main/documentation/examples/prometheus.yml)
+An example of the above configuration file can be found [here.](https://github.com/zhubiaook/prometheus/blob/main/documentation/examples/prometheus.yml)
 
 You can also build using `make build`, which will compile in the web assets so that
 Prometheus can be run from anywhere:
@@ -164,7 +164,7 @@ Prometheus v2.y.z releases, we are publishing equivalent v0.y.z tags.
 Therefore, a user that would want to use Prometheus v2.35.0 as a library could do:
 
 ```shell
-go get github.com/prometheus/prometheus@v0.35.0
+go get github.com/zhubiaook/prometheus@v0.35.0
 ```
 
 This solution makes it clear that we might break our internal Go APIs between
@@ -177,17 +177,17 @@ For more information on building, running, and developing on the React-based UI,
 
 ## More information
 
-* Godoc documentation is available via [pkg.go.dev](https://pkg.go.dev/github.com/prometheus/prometheus). Due to peculiarities of Go Modules, v2.x.y will be displayed as v0.x.y.
+* Godoc documentation is available via [pkg.go.dev](https://pkg.go.dev/github.com/zhubiaook/prometheus). Due to peculiarities of Go Modules, v2.x.y will be displayed as v0.x.y.
 * You will find a CircleCI configuration in [`.circleci/config.yml`](.circleci/config.yml).
 * See the [Community page](https://prometheus.io/community) for how to reach the Prometheus developers and users on various communication channels.
 
 ## Contributing
 
-Refer to [CONTRIBUTING.md](https://github.com/prometheus/prometheus/blob/main/CONTRIBUTING.md)
+Refer to [CONTRIBUTING.md](https://github.com/zhubiaook/prometheus/blob/main/CONTRIBUTING.md)
 
 ## License
 
-Apache License 2.0, see [LICENSE](https://github.com/prometheus/prometheus/blob/main/LICENSE).
+Apache License 2.0, see [LICENSE](https://github.com/zhubiaook/prometheus/blob/main/LICENSE).
 
 [hub]: https://hub.docker.com/r/prom/prometheus/
 [circleci]: https://circleci.com/gh/prometheus/prometheus

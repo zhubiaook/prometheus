@@ -35,15 +35,15 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/atomic"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/model/histogram"
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/model/textparse"
-	"github.com/prometheus/prometheus/model/timestamp"
-	"github.com/prometheus/prometheus/prompb"
-	"github.com/prometheus/prometheus/scrape"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	"github.com/prometheus/prometheus/tsdb/record"
+	"github.com/zhubiaook/prometheus/config"
+	"github.com/zhubiaook/prometheus/model/histogram"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/model/textparse"
+	"github.com/zhubiaook/prometheus/model/timestamp"
+	"github.com/zhubiaook/prometheus/prompb"
+	"github.com/zhubiaook/prometheus/scrape"
+	"github.com/zhubiaook/prometheus/tsdb/chunks"
+	"github.com/zhubiaook/prometheus/tsdb/record"
 )
 
 const defaultFlushDeadline = 1 * time.Minute

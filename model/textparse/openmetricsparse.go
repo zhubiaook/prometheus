@@ -26,10 +26,10 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/prometheus/prometheus/model/exemplar"
-	"github.com/prometheus/prometheus/model/histogram"
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/model/value"
+	"github.com/zhubiaook/prometheus/model/exemplar"
+	"github.com/zhubiaook/prometheus/model/histogram"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/model/value"
 )
 
 var allowedSuffixes = [][]byte{[]byte("_total"), []byte("_bucket")}

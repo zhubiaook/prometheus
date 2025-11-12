@@ -21,10 +21,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/promql/parser"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/util/teststorage"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/promql/parser"
+	"github.com/zhubiaook/prometheus/storage"
+	"github.com/zhubiaook/prometheus/util/teststorage"
 )
 
 func BenchmarkRangeQuery(b *testing.B) {

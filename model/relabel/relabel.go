@@ -21,7 +21,7 @@ import (
 	"github.com/grafana/regexp"
 	"github.com/prometheus/common/model"
 
-	"github.com/prometheus/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/model/labels"
 )
 
 var (

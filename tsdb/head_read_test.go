@@ -19,7 +19,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
+	"github.com/zhubiaook/prometheus/tsdb/chunkenc"
 )
 
 func TestBoundedChunk(t *testing.T) {

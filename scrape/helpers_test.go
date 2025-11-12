@@ -19,11 +19,11 @@ import (
 	"math/rand"
 	"strings"
 
-	"github.com/prometheus/prometheus/model/exemplar"
-	"github.com/prometheus/prometheus/model/histogram"
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/model/metadata"
-	"github.com/prometheus/prometheus/storage"
+	"github.com/zhubiaook/prometheus/model/exemplar"
+	"github.com/zhubiaook/prometheus/model/histogram"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/model/metadata"
+	"github.com/zhubiaook/prometheus/storage"
 )
 
 type nopAppendable struct{}

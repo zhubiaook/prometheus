@@ -31,16 +31,16 @@ import (
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/codes"
 
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/model/rulefmt"
-	"github.com/prometheus/prometheus/model/timestamp"
-	"github.com/prometheus/prometheus/model/value"
-	"github.com/prometheus/prometheus/notifier"
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/promql/parser"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
-	"github.com/prometheus/prometheus/util/strutil"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/model/rulefmt"
+	"github.com/zhubiaook/prometheus/model/timestamp"
+	"github.com/zhubiaook/prometheus/model/value"
+	"github.com/zhubiaook/prometheus/notifier"
+	"github.com/zhubiaook/prometheus/promql"
+	"github.com/zhubiaook/prometheus/promql/parser"
+	"github.com/zhubiaook/prometheus/storage"
+	"github.com/zhubiaook/prometheus/tsdb/chunkenc"
+	"github.com/zhubiaook/prometheus/util/strutil"
 )
 
 // RuleHealth describes the health state of a rule.

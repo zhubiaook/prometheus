@@ -29,12 +29,12 @@ import (
 	"github.com/prometheus/common/route"
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/rules"
-	"github.com/prometheus/prometheus/scrape"
-	"github.com/prometheus/prometheus/storage"
+	"github.com/zhubiaook/prometheus/config"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/promql"
+	"github.com/zhubiaook/prometheus/rules"
+	"github.com/zhubiaook/prometheus/scrape"
+	"github.com/zhubiaook/prometheus/storage"
 )
 
 func TestApiStatusCodes(t *testing.T) {
@@ -205,7 +205,7 @@ func (t errorTestSeriesSet) Warnings() storage.Warnings {
 	return nil
 }
 
-// DummyTargetRetriever implements github.com/prometheus/prometheus/web/api/v1.targetRetriever.
+// DummyTargetRetriever implements github.com/zhubiaook/prometheus/web/api/v1.targetRetriever.
 type DummyTargetRetriever struct{}
 
 // TargetsActive implements targetRetriever.

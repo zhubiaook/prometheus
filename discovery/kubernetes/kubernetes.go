@@ -49,8 +49,8 @@ import (
 	// Required to get the GCP auth provider working.
 	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
 
-	"github.com/prometheus/prometheus/discovery"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
+	"github.com/zhubiaook/prometheus/discovery"
+	"github.com/zhubiaook/prometheus/discovery/targetgroup"
 )
 
 const (

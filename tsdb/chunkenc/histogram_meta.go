@@ -16,7 +16,7 @@ package chunkenc
 import (
 	"math"
 
-	"github.com/prometheus/prometheus/model/histogram"
+	"github.com/zhubiaook/prometheus/model/histogram"
 )
 
 func writeHistogramChunkLayout(b *bstream, schema int32, zeroThreshold float64, positiveSpans, negativeSpans []histogram.Span) {

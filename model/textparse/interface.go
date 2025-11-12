@@ -16,9 +16,9 @@ package textparse
 import (
 	"mime"
 
-	"github.com/prometheus/prometheus/model/exemplar"
-	"github.com/prometheus/prometheus/model/histogram"
-	"github.com/prometheus/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/model/exemplar"
+	"github.com/zhubiaook/prometheus/model/histogram"
+	"github.com/zhubiaook/prometheus/model/labels"
 )
 
 // Parser parses samples from a byte slice of samples in the official

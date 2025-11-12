@@ -23,10 +23,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"gopkg.in/yaml.v2"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/model/relabel"
+	"github.com/zhubiaook/prometheus/config"
+	"github.com/zhubiaook/prometheus/discovery/targetgroup"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/model/relabel"
 )
 
 func TestPopulateLabels(t *testing.T) {

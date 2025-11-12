@@ -22,11 +22,11 @@ import (
 
 	"golang.org/x/exp/slices"
 
-	"github.com/prometheus/prometheus/model/histogram"
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
-	"github.com/prometheus/prometheus/tsdb/chunks"
-	tsdb_errors "github.com/prometheus/prometheus/tsdb/errors"
+	"github.com/zhubiaook/prometheus/model/histogram"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/tsdb/chunkenc"
+	"github.com/zhubiaook/prometheus/tsdb/chunks"
+	tsdb_errors "github.com/zhubiaook/prometheus/tsdb/errors"
 )
 
 type mergeGenericQuerier struct {

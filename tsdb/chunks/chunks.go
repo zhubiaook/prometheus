@@ -26,9 +26,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
-	tsdb_errors "github.com/prometheus/prometheus/tsdb/errors"
-	"github.com/prometheus/prometheus/tsdb/fileutil"
+	"github.com/zhubiaook/prometheus/tsdb/chunkenc"
+	tsdb_errors "github.com/zhubiaook/prometheus/tsdb/errors"
+	"github.com/zhubiaook/prometheus/tsdb/fileutil"
 )
 
 // Segment header fields constants.

@@ -23,14 +23,14 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/model/relabel"
-	"github.com/prometheus/prometheus/model/timestamp"
-	"github.com/prometheus/prometheus/notifier"
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/promql/parser"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/util/teststorage"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/model/relabel"
+	"github.com/zhubiaook/prometheus/model/timestamp"
+	"github.com/zhubiaook/prometheus/notifier"
+	"github.com/zhubiaook/prometheus/promql"
+	"github.com/zhubiaook/prometheus/promql/parser"
+	"github.com/zhubiaook/prometheus/storage"
+	"github.com/zhubiaook/prometheus/util/teststorage"
 )
 
 func TestAlertingRuleState(t *testing.T) {
@@ -663,7 +663,7 @@ func TestQueryForStateSeries(t *testing.T) {
 	}
 }
 
-// TestSendAlertsDontAffectActiveAlerts tests a fix for https://github.com/prometheus/prometheus/issues/11424.
+// TestSendAlertsDontAffectActiveAlerts tests a fix for https://github.com/zhubiaook/prometheus/issues/11424.
 func TestSendAlertsDontAffectActiveAlerts(t *testing.T) {
 	rule := NewAlertingRule(
 		"TestRule",

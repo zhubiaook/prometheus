@@ -51,28 +51,28 @@ import (
 	"k8s.io/klog"
 	klogv2 "k8s.io/klog/v2"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/discovery"
-	"github.com/prometheus/prometheus/discovery/legacymanager"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/model/exemplar"
-	"github.com/prometheus/prometheus/model/histogram"
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/model/metadata"
-	"github.com/prometheus/prometheus/model/relabel"
-	"github.com/prometheus/prometheus/notifier"
-	_ "github.com/prometheus/prometheus/plugins" // Register plugins.
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/rules"
-	"github.com/prometheus/prometheus/scrape"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/storage/remote"
-	"github.com/prometheus/prometheus/tracing"
-	"github.com/prometheus/prometheus/tsdb"
-	"github.com/prometheus/prometheus/tsdb/agent"
-	"github.com/prometheus/prometheus/util/logging"
-	prom_runtime "github.com/prometheus/prometheus/util/runtime"
-	"github.com/prometheus/prometheus/web"
+	"github.com/zhubiaook/prometheus/config"
+	"github.com/zhubiaook/prometheus/discovery"
+	"github.com/zhubiaook/prometheus/discovery/legacymanager"
+	"github.com/zhubiaook/prometheus/discovery/targetgroup"
+	"github.com/zhubiaook/prometheus/model/exemplar"
+	"github.com/zhubiaook/prometheus/model/histogram"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/model/metadata"
+	"github.com/zhubiaook/prometheus/model/relabel"
+	"github.com/zhubiaook/prometheus/notifier"
+	_ "github.com/zhubiaook/prometheus/plugins" // Register plugins.
+	"github.com/zhubiaook/prometheus/promql"
+	"github.com/zhubiaook/prometheus/rules"
+	"github.com/zhubiaook/prometheus/scrape"
+	"github.com/zhubiaook/prometheus/storage"
+	"github.com/zhubiaook/prometheus/storage/remote"
+	"github.com/zhubiaook/prometheus/tracing"
+	"github.com/zhubiaook/prometheus/tsdb"
+	"github.com/zhubiaook/prometheus/tsdb/agent"
+	"github.com/zhubiaook/prometheus/util/logging"
+	prom_runtime "github.com/zhubiaook/prometheus/util/runtime"
+	"github.com/zhubiaook/prometheus/web"
 )
 
 var (
@@ -381,10 +381,10 @@ func main() {
 	serverOnlyFlag(a, "rules.alert.resend-delay", "Minimum amount of time to wait before resending an alert to Alertmanager.").
 		Default("1m").SetValue(&cfg.resendDelay)
 
-	a.Flag("scrape.adjust-timestamps", "Adjust scrape timestamps by up to `scrape.timestamp-tolerance` to align them to the intended schedule. See https://github.com/prometheus/prometheus/issues/7846 for more context. Experimental. This flag will be removed in a future release.").
+	a.Flag("scrape.adjust-timestamps", "Adjust scrape timestamps by up to `scrape.timestamp-tolerance` to align them to the intended schedule. See https://github.com/zhubiaook/prometheus/issues/7846 for more context. Experimental. This flag will be removed in a future release.").
 		Hidden().Default("true").BoolVar(&scrape.AlignScrapeTimestamps)
 
-	a.Flag("scrape.timestamp-tolerance", "Timestamp tolerance. See https://github.com/prometheus/prometheus/issues/7846 for more context. Experimental. This flag will be removed in a future release.").
+	a.Flag("scrape.timestamp-tolerance", "Timestamp tolerance. See https://github.com/zhubiaook/prometheus/issues/7846 for more context. Experimental. This flag will be removed in a future release.").
 		Hidden().Default("2ms").DurationVar(&scrape.ScrapeTimestampTolerance)
 
 	serverOnlyFlag(a, "alertmanager.notification-queue-capacity", "The capacity of the queue for pending Alertmanager notifications.").

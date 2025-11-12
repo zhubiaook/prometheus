@@ -47,17 +47,17 @@ import (
 	dto "github.com/prometheus/client_model/go"
 	"github.com/prometheus/common/expfmt"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/discovery"
-	"github.com/prometheus/prometheus/discovery/file"
-	"github.com/prometheus/prometheus/discovery/kubernetes"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/model/rulefmt"
-	"github.com/prometheus/prometheus/notifier"
-	_ "github.com/prometheus/prometheus/plugins" // Register plugins.
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/scrape"
+	"github.com/zhubiaook/prometheus/config"
+	"github.com/zhubiaook/prometheus/discovery"
+	"github.com/zhubiaook/prometheus/discovery/file"
+	"github.com/zhubiaook/prometheus/discovery/kubernetes"
+	"github.com/zhubiaook/prometheus/discovery/targetgroup"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/model/rulefmt"
+	"github.com/zhubiaook/prometheus/notifier"
+	_ "github.com/zhubiaook/prometheus/plugins" // Register plugins.
+	"github.com/zhubiaook/prometheus/promql"
+	"github.com/zhubiaook/prometheus/scrape"
 )
 
 const (

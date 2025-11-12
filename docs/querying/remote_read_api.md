@@ -64,9 +64,9 @@ Note: Names of query parameters that may be repeated end with `[]`.
 ## Remote Read API
 
 This API provides data read functionality from Prometheus. This interface expects [snappy](https://github.com/google/snappy) compression.
-The API definition is located [here](https://github.com/prometheus/prometheus/blob/master/prompb/remote.proto).
+The API definition is located [here](https://github.com/zhubiaook/prometheus/blob/master/prompb/remote.proto).
 /// Can you clarify what you mean by this?
-/// https://github.com/prometheus/prometheus/pull/7266#discussion_r426456791 Can we talk a little bit how negotiation works of sampled vs streamed ?
+/// https://github.com/zhubiaook/prometheus/pull/7266#discussion_r426456791 Can we talk a little bit how negotiation works of sampled vs streamed ?
 
 Request are made to the following endpoint.
 ```

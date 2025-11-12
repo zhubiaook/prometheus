@@ -19,11 +19,11 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/docker/docker/api/types"
+	"github.com/zhubiaook/docker/api/types"
 	"github.com/prometheus/common/model"
 
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/util/strutil"
+	"github.com/zhubiaook/prometheus/discovery/targetgroup"
+	"github.com/zhubiaook/prometheus/util/strutil"
 )
 
 const (

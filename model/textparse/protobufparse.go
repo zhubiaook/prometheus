@@ -27,11 +27,11 @@ import (
 	"github.com/pkg/errors"
 	"github.com/prometheus/common/model"
 
-	"github.com/prometheus/prometheus/model/exemplar"
-	"github.com/prometheus/prometheus/model/histogram"
-	"github.com/prometheus/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/model/exemplar"
+	"github.com/zhubiaook/prometheus/model/histogram"
+	"github.com/zhubiaook/prometheus/model/labels"
 
-	dto "github.com/prometheus/prometheus/prompb/io/prometheus/client"
+	dto "github.com/zhubiaook/prometheus/prompb/io/prometheus/client"
 )
 
 // ProtobufParser is a very inefficient way of unmarshaling the old Prometheus

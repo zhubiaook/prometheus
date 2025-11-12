@@ -22,11 +22,11 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/require"
 
-	"github.com/prometheus/prometheus/model/exemplar"
-	"github.com/prometheus/prometheus/model/histogram"
-	"github.com/prometheus/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/model/exemplar"
+	"github.com/zhubiaook/prometheus/model/histogram"
+	"github.com/zhubiaook/prometheus/model/labels"
 
-	dto "github.com/prometheus/prometheus/prompb/io/prometheus/client"
+	dto "github.com/zhubiaook/prometheus/prompb/io/prometheus/client"
 )
 
 func TestProtobufParse(t *testing.T) {

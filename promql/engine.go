@@ -37,14 +37,14 @@ import (
 	"go.opentelemetry.io/otel/trace"
 	"golang.org/x/exp/slices"
 
-	"github.com/prometheus/prometheus/model/histogram"
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/model/timestamp"
-	"github.com/prometheus/prometheus/model/value"
-	"github.com/prometheus/prometheus/promql/parser"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
-	"github.com/prometheus/prometheus/util/stats"
+	"github.com/zhubiaook/prometheus/model/histogram"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/model/timestamp"
+	"github.com/zhubiaook/prometheus/model/value"
+	"github.com/zhubiaook/prometheus/promql/parser"
+	"github.com/zhubiaook/prometheus/storage"
+	"github.com/zhubiaook/prometheus/tsdb/chunkenc"
+	"github.com/zhubiaook/prometheus/util/stats"
 )
 
 const (
@@ -160,7 +160,7 @@ type QueryOrigin struct{}
 
 // Statement implements the Query interface.
 // Calling this after Exec may result in panic,
-// see https://github.com/prometheus/prometheus/issues/8949.
+// see https://github.com/zhubiaook/prometheus/issues/8949.
 func (q *query) Statement() parser.Statement {
 	return q.stmt
 }

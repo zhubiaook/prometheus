@@ -20,16 +20,16 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/docker/docker/api/types/filters"
-	"github.com/docker/docker/client"
 	"github.com/go-kit/log"
 	"github.com/prometheus/common/config"
 	"github.com/prometheus/common/model"
 	"github.com/prometheus/common/version"
+	"github.com/zhubiaook/docker/api/types/filters"
+	"github.com/zhubiaook/docker/client"
 
-	"github.com/prometheus/prometheus/discovery"
-	"github.com/prometheus/prometheus/discovery/refresh"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
+	"github.com/zhubiaook/prometheus/discovery"
+	"github.com/zhubiaook/prometheus/discovery/refresh"
+	"github.com/zhubiaook/prometheus/discovery/targetgroup"
 )
 
 const (

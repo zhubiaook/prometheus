@@ -28,8 +28,8 @@ import (
 	"github.com/scaleway/scaleway-sdk-go/api/instance/v1"
 	"github.com/scaleway/scaleway-sdk-go/scw"
 
-	"github.com/prometheus/prometheus/discovery/refresh"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
+	"github.com/zhubiaook/prometheus/discovery/refresh"
+	"github.com/zhubiaook/prometheus/discovery/targetgroup"
 )
 
 const (

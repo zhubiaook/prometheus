@@ -16,7 +16,7 @@ package main
 import (
 	"testing"
 
-	"github.com/prometheus/prometheus/promql"
+	"github.com/zhubiaook/prometheus/promql"
 )
 
 func TestRulesUnitTest(t *testing.T) {

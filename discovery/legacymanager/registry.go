@@ -24,8 +24,8 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/prometheus/prometheus/discovery"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
+	"github.com/zhubiaook/prometheus/discovery"
+	"github.com/zhubiaook/prometheus/discovery/targetgroup"
 )
 
 const (

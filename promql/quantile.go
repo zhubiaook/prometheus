@@ -17,8 +17,8 @@ import (
 	"math"
 	"sort"
 
-	"github.com/prometheus/prometheus/model/histogram"
-	"github.com/prometheus/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/model/histogram"
+	"github.com/zhubiaook/prometheus/model/labels"
 )
 
 // Helpers to calculate quantiles.

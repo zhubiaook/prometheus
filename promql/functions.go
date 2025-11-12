@@ -24,9 +24,9 @@ import (
 	"github.com/grafana/regexp"
 	"github.com/prometheus/common/model"
 
-	"github.com/prometheus/prometheus/model/histogram"
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/promql/parser"
+	"github.com/zhubiaook/prometheus/model/histogram"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/promql/parser"
 )
 
 // FunctionCall is the type of a PromQL function implementation
@@ -845,7 +845,7 @@ func funcDeriv(vals []parser.Value, args parser.Expressions, enh *EvalNodeHelper
 
 	// We pass in an arbitrary timestamp that is near the values in use
 	// to avoid floating point accuracy issues, see
-	// https://github.com/prometheus/prometheus/issues/2674
+	// https://github.com/zhubiaook/prometheus/issues/2674
 	slope, _ := linearRegression(samples.Points, samples.Points[0].T)
 	return append(enh.Out, Sample{
 		Point: Point{V: slope},

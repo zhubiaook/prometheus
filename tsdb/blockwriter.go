@@ -23,9 +23,9 @@ import (
 	"github.com/oklog/ulid"
 	"github.com/pkg/errors"
 
-	"github.com/prometheus/prometheus/model/timestamp"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
+	"github.com/zhubiaook/prometheus/model/timestamp"
+	"github.com/zhubiaook/prometheus/storage"
+	"github.com/zhubiaook/prometheus/tsdb/chunkenc"
 )
 
 // BlockWriter is a block writer that allows appending and flushing series to disk.

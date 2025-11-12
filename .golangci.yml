@@ -35,6 +35,6 @@ linters-settings:
   errcheck:
     exclude: scripts/errcheck_excludes.txt
   goimports:
-    local-prefixes: github.com/prometheus/prometheus
+    local-prefixes: github.com/zhubiaook/prometheus
   gofumpt:
     extra-rules: true

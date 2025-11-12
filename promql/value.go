@@ -20,11 +20,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/prometheus/prometheus/model/histogram"
-	"github.com/prometheus/prometheus/model/labels"
-	"github.com/prometheus/prometheus/promql/parser"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/tsdb/chunkenc"
+	"github.com/zhubiaook/prometheus/model/histogram"
+	"github.com/zhubiaook/prometheus/model/labels"
+	"github.com/zhubiaook/prometheus/promql/parser"
+	"github.com/zhubiaook/prometheus/storage"
+	"github.com/zhubiaook/prometheus/tsdb/chunkenc"
 )
 
 func (Matrix) Type() parser.ValueType { return parser.ValueTypeMatrix }
@@ -219,7 +219,7 @@ func (vec Vector) String() string {
 
 // ContainsSameLabelset checks if a vector has samples with the same labelset
 // Such a behavior is semantically undefined
-// https://github.com/prometheus/prometheus/issues/4562
+// https://github.com/zhubiaook/prometheus/issues/4562
 func (vec Vector) ContainsSameLabelset() bool {
 	switch len(vec) {
 	case 0, 1:
@@ -269,7 +269,7 @@ func (m Matrix) Swap(i, j int)      { m[i], m[j] = m[j], m[i] }
 
 // ContainsSameLabelset checks if a matrix has samples with the same labelset.
 // Such a behavior is semantically undefined.
-// https://github.com/prometheus/prometheus/issues/4562
+// https://github.com/zhubiaook/prometheus/issues/4562
 func (m Matrix) ContainsSameLabelset() bool {
 	switch len(m) {
 	case 0, 1:
